@@ -1,0 +1,57 @@
+Este projeto consiste na simulação da criação de uma empresa fictícia do setor vitícola que utiliza inteligência artificial em várias etapas da produção. O objetivo é demonstrar a aplicação prática de diferentes modelos de IA (desde recomendações baseadas em árvores até visão computacional, séries temporais e otimização) num contexto realista
+Nota: Todos os dados são sintéticos, gerados para se aproximarem da realidade da região do Douro (Portugal). A estrutura é modular e facilmente adaptável a dados reais.
+Visão Geral
+A empresa fictícia "VitisIA" dedica-se à produção de vinho de qualidade, usando IA para apoiar decisões em diversas fases:
+
+Planeamento: recomendação de castas mais adequadas a cada talhão (notebook 01).
+
+Monitorização: deteção precoce de doenças através de imagens de videiras (notebooks 02 e 03).
+
+Previsão: estimativa da produtividade e do teor alcoólico com base em dados climáticos e índices de vegetação (notebook 04).
+
+Logística: calendarização ótima da vindima respeitando restrições da adega (notebook 05).
+
+Comercialização: previsão de preços de mercado para decidir o melhor momento de venda (notebook 06).
+
+Não foram implementadas todas as etapas de uma cadeia de valor completa; estas seis representam um conjunto coerente e ilustrativo das potencialidades da IA no setor.
+
+Tecnologias Utilizadas
+Linguagem: Python 3.9+
+
+Ambiente de desenvolvimento: VS Code, Jupyter Notebooks
+
+Bibliotecas principais:
+
+Manipulação de dados: pandas, numpy, geopandas
+
+Visualização: matplotlib, seaborn, folium
+
+Machine Learning: scikit-learn, xgboost
+
+Deep Learning: tensorflow / keras
+
+Séries temporais: statsmodels, pmdarima
+
+Visão computacional: opencv-python, scikit-image
+
+Otimização: ortools
+
+
+Estrutura do Projeto
+A organização do repositório segue as boas práticas de projetos de ciência de dados:
+
+text
+agro-ia-simulacao/
+├── data/               # Dados sintéticos (CSV, imagens) e pastas raw/processed
+├── notebooks/          # Jupyter Notebooks (um por etapa)
+├── src/                # Código fonte (geração de dados, modelos)
+├── docs/               # Documentação (opcional)
+├── tests/              # Testes unitários (vazio)
+├── requirements.txt    # Dependências do projeto
+└── README.md           # Este ficheiro
+Os ficheiros de grande dimensão (modelos treinados e imagens PNG) não são incluídos no repositório GitHub devido a limitações de tamanho, mas podem ser gerados localmente executando os notebooks correspondentes.
+
+
+
+Descrição dos Notebooks
+

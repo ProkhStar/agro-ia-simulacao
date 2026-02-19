@@ -1,0 +1,31 @@
+ano,talhao_id,casta,produtividade_ton_ha,graus_dia_ciclo,precip_ciclo_mm
+2019,1,Touriga Nacional,9.52,2087,57.3
+2019,2,Tinta Roriz,10.07,2087,57.3
+2019,3,Touriga Franca,10.34,2087,57.3
+2019,4,Viosinho,5.33,2087,57.3
+2019,5,Tinto C�o,7.34,2087,57.3
+2020,1,Touriga Nacional,13.67,2074,121.7
+2020,2,Tinta Roriz,20.69,2074,121.7
+2020,3,Touriga Franca,16.45,2074,121.7
+2020,4,Viosinho,14.44,2074,121.7
+2020,5,Tinto C�o,17.33,2074,121.7
+2021,1,Touriga Nacional,9.93,2076,77.6
+2021,2,Tinta Roriz,14.19,2076,77.6
+2021,3,Touriga Franca,11.12,2076,77.6
+2021,4,Viosinho,8.01,2076,77.6
+2021,5,Tinto C�o,11.08,2076,77.6
+2022,1,Touriga Nacional,19.15,2078,148.6
+2022,2,Tinta Roriz,22.03,2078,148.6
+2022,3,Touriga Franca,19.46,2078,148.6
+2022,4,Viosinho,22.64,2078,148.6
+2022,5,Tinto C�o,19.25,2078,148.6
+2023,1,Touriga Nacional,21.2,2056,159.5
+2023,2,Tinta Roriz,29.36,2056,159.5
+2023,3,Touriga Franca,16.47,2056,159.5
+2023,4,Viosinho,14.75,2056,159.5
+2023,5,Tinto C�o,23.98,2056,159.5
+2024,1,Touriga Nacional,20.99,2053,221.1
+2024,2,Tinta Roriz,28.48,2053,221.1
+2024,3,Touriga Franca,30.58,2053,221.1
+2024,4,Viosinho,25.54,2053,221.1
+2024,5,Tinto C�o,30.97,2053,221.1

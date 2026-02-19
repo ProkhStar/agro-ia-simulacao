@@ -1,0 +1,855 @@
+(base) PS C:\Users\PEDRO\OneDrive\Ambiente de Trabalho\agro-ia-simulacao> tree /f
+Folder PATH listing for volume Windows
+Volume serial number is 9CFF-F8E4
+C:.
+│   .gitignore
+│   requirements.txt
+│
+├───data
+│   ├───processed
+│   ├───raw
+│   └───synthetic
+│       │   clima_diario_2019_2024.csv
+│       │   ndvi_diario.csv
+│       │   produtividade_anual.csv
+│       │   talhoes.csv
+│       │   talhoes_com_solo.csv
+│       │
+│       └───imagens_videira
+│           │   metadados.csv
+│           │
+│           ├───escoriose
+│           │       escoriose_000.png
+│           │       escoriose_001.png
+│           │       escoriose_002.png
+│           │       escoriose_003.png
+│           │       escoriose_004.png
+│           │       escoriose_005.png
+│           │       escoriose_006.png
+│           │       escoriose_007.png
+│           │       escoriose_008.png
+│           │       escoriose_009.png
+│           │       escoriose_010.png
+│           │       escoriose_011.png
+│           │       escoriose_012.png
+│           │       escoriose_013.png
+│           │       escoriose_014.png
+│           │       escoriose_015.png
+│           │       escoriose_016.png
+│           │       escoriose_017.png
+│           │       escoriose_018.png
+│           │       escoriose_019.png
+│           │       escoriose_020.png
+│           │       escoriose_021.png
+│           │       escoriose_022.png
+│           │       escoriose_023.png
+│           │       escoriose_024.png
+│           │       escoriose_025.png
+│           │       escoriose_026.png
+│           │       escoriose_027.png
+│           │       escoriose_028.png
+│           │       escoriose_029.png
+│           │       escoriose_030.png
+│           │       escoriose_031.png
+│           │       escoriose_032.png
+│           │       escoriose_033.png
+│           │       escoriose_034.png
+│           │       escoriose_035.png
+│           │       escoriose_036.png
+│           │       escoriose_037.png
+│           │       escoriose_038.png
+│           │       escoriose_039.png
+│           │       escoriose_040.png
+│           │       escoriose_041.png
+│           │       escoriose_042.png
+│           │       escoriose_043.png
+│           │       escoriose_044.png
+│           │       escoriose_045.png
+│           │       escoriose_046.png
+│           │       escoriose_047.png
+│           │       escoriose_048.png
+│           │       escoriose_049.png
+│           │       escoriose_050.png
+│           │       escoriose_051.png
+│           │       escoriose_052.png
+│           │       escoriose_053.png
+│           │       escoriose_054.png
+│           │       escoriose_055.png
+│           │       escoriose_056.png
+│           │       escoriose_057.png
+│           │       escoriose_058.png
+│           │       escoriose_059.png
+│           │       escoriose_060.png
+│           │       escoriose_061.png
+│           │       escoriose_062.png
+│           │       escoriose_063.png
+│           │       escoriose_064.png
+│           │       escoriose_065.png
+│           │       escoriose_066.png
+│           │       escoriose_067.png
+│           │       escoriose_068.png
+│           │       escoriose_069.png
+│           │       escoriose_070.png
+│           │       escoriose_071.png
+│           │       escoriose_072.png
+│           │       escoriose_073.png
+│           │       escoriose_074.png
+│           │       escoriose_075.png
+│           │       escoriose_076.png
+│           │       escoriose_077.png
+│           │       escoriose_078.png
+│           │       escoriose_079.png
+│           │       escoriose_080.png
+│           │       escoriose_081.png
+│           │       escoriose_082.png
+│           │       escoriose_083.png
+│           │       escoriose_084.png
+│           │       escoriose_085.png
+│           │       escoriose_086.png
+│           │       escoriose_087.png
+│           │       escoriose_088.png
+│           │       escoriose_089.png
+│           │       escoriose_090.png
+│           │       escoriose_091.png
+│           │       escoriose_092.png
+│           │       escoriose_093.png
+│           │       escoriose_094.png
+│           │       escoriose_095.png
+│           │       escoriose_096.png
+│           │       escoriose_097.png
+│           │       escoriose_098.png
+│           │       escoriose_099.png
+│           │       escoriose_100.png
+│           │       escoriose_101.png
+│           │       escoriose_102.png
+│           │       escoriose_103.png
+│           │       escoriose_104.png
+│           │       escoriose_105.png
+│           │       escoriose_106.png
+│           │       escoriose_107.png
+│           │       escoriose_108.png
+│           │       escoriose_109.png
+│           │       escoriose_110.png
+│           │       escoriose_111.png
+│           │       escoriose_112.png
+│           │       escoriose_113.png
+│           │       escoriose_114.png
+│           │       escoriose_115.png
+│           │       escoriose_116.png
+│           │       escoriose_117.png
+│           │       escoriose_118.png
+│           │       escoriose_119.png
+│           │       escoriose_120.png
+│           │       escoriose_121.png
+│           │       escoriose_122.png
+│           │       escoriose_123.png
+│           │       escoriose_124.png
+│           │       escoriose_125.png
+│           │       escoriose_126.png
+│           │       escoriose_127.png
+│           │       escoriose_128.png
+│           │       escoriose_129.png
+│           │       escoriose_130.png
+│           │       escoriose_131.png
+│           │       escoriose_132.png
+│           │       escoriose_133.png
+│           │       escoriose_134.png
+│           │       escoriose_135.png
+│           │       escoriose_136.png
+│           │       escoriose_137.png
+│           │       escoriose_138.png
+│           │       escoriose_139.png
+│           │       escoriose_140.png
+│           │       escoriose_141.png
+│           │       escoriose_142.png
+│           │       escoriose_143.png
+│           │       escoriose_144.png
+│           │       escoriose_145.png
+│           │       escoriose_146.png
+│           │       escoriose_147.png
+│           │       escoriose_148.png
+│           │       escoriose_149.png
+│           │       escoriose_150.png
+│           │       escoriose_151.png
+│           │       escoriose_152.png
+│           │       escoriose_153.png
+│           │       escoriose_154.png
+│           │       escoriose_155.png
+│           │       escoriose_156.png
+│           │       escoriose_157.png
+│           │       escoriose_158.png
+│           │       escoriose_159.png
+│           │       escoriose_160.png
+│           │       escoriose_161.png
+│           │       escoriose_162.png
+│           │       escoriose_163.png
+│           │       escoriose_164.png
+│           │       escoriose_165.png
+│           │       escoriose_166.png
+│           │       escoriose_167.png
+│           │       escoriose_168.png
+│           │       escoriose_169.png
+│           │       escoriose_170.png
+│           │       escoriose_171.png
+│           │       escoriose_172.png
+│           │       escoriose_173.png
+│           │       escoriose_174.png
+│           │       escoriose_175.png
+│           │       escoriose_176.png
+│           │       escoriose_177.png
+│           │       escoriose_178.png
+│           │       escoriose_179.png
+│           │       escoriose_180.png
+│           │       escoriose_181.png
+│           │       escoriose_182.png
+│           │       escoriose_183.png
+│           │       escoriose_184.png
+│           │       escoriose_185.png
+│           │       escoriose_186.png
+│           │       escoriose_187.png
+│           │       escoriose_188.png
+│           │       escoriose_189.png
+│           │       escoriose_190.png
+│           │       escoriose_191.png
+│           │       escoriose_192.png
+│           │       escoriose_193.png
+│           │       escoriose_194.png
+│           │       escoriose_195.png
+│           │       escoriose_196.png
+│           │       escoriose_197.png
+│           │       escoriose_198.png
+│           │       escoriose_199.png
+│           │
+│           ├───mildio
+│           │       mildio_000.png
+│           │       mildio_001.png
+│           │       mildio_002.png
+│           │       mildio_003.png
+│           │       mildio_004.png
+│           │       mildio_005.png
+│           │       mildio_006.png
+│           │       mildio_007.png
+│           │       mildio_008.png
+│           │       mildio_009.png
+│           │       mildio_010.png
+│           │       mildio_011.png
+│           │       mildio_012.png
+│           │       mildio_013.png
+│           │       mildio_014.png
+│           │       mildio_015.png
+│           │       mildio_016.png
+│           │       mildio_017.png
+│           │       mildio_018.png
+│           │       mildio_019.png
+│           │       mildio_020.png
+│           │       mildio_021.png
+│           │       mildio_022.png
+│           │       mildio_023.png
+│           │       mildio_024.png
+│           │       mildio_025.png
+│           │       mildio_026.png
+│           │       mildio_027.png
+│           │       mildio_028.png
+│           │       mildio_029.png
+│           │       mildio_030.png
+│           │       mildio_031.png
+│           │       mildio_032.png
+│           │       mildio_033.png
+│           │       mildio_034.png
+│           │       mildio_035.png
+│           │       mildio_036.png
+│           │       mildio_037.png
+│           │       mildio_038.png
+│           │       mildio_039.png
+│           │       mildio_040.png
+│           │       mildio_041.png
+│           │       mildio_042.png
+│           │       mildio_043.png
+│           │       mildio_044.png
+│           │       mildio_045.png
+│           │       mildio_046.png
+│           │       mildio_047.png
+│           │       mildio_048.png
+│           │       mildio_049.png
+│           │       mildio_050.png
+│           │       mildio_051.png
+│           │       mildio_052.png
+│           │       mildio_053.png
+│           │       mildio_054.png
+│           │       mildio_055.png
+│           │       mildio_056.png
+│           │       mildio_057.png
+│           │       mildio_058.png
+│           │       mildio_059.png
+│           │       mildio_060.png
+│           │       mildio_061.png
+│           │       mildio_062.png
+│           │       mildio_063.png
+│           │       mildio_064.png
+│           │       mildio_065.png
+│           │       mildio_066.png
+│           │       mildio_067.png
+│           │       mildio_068.png
+│           │       mildio_069.png
+│           │       mildio_070.png
+│           │       mildio_071.png
+│           │       mildio_072.png
+│           │       mildio_073.png
+│           │       mildio_074.png
+│           │       mildio_075.png
+│           │       mildio_076.png
+│           │       mildio_077.png
+│           │       mildio_078.png
+│           │       mildio_079.png
+│           │       mildio_080.png
+│           │       mildio_081.png
+│           │       mildio_082.png
+│           │       mildio_083.png
+│           │       mildio_084.png
+│           │       mildio_085.png
+│           │       mildio_086.png
+│           │       mildio_087.png
+│           │       mildio_088.png
+│           │       mildio_089.png
+│           │       mildio_090.png
+│           │       mildio_091.png
+│           │       mildio_092.png
+│           │       mildio_093.png
+│           │       mildio_094.png
+│           │       mildio_095.png
+│           │       mildio_096.png
+│           │       mildio_097.png
+│           │       mildio_098.png
+│           │       mildio_099.png
+│           │       mildio_100.png
+│           │       mildio_101.png
+│           │       mildio_102.png
+│           │       mildio_103.png
+│           │       mildio_104.png
+│           │       mildio_105.png
+│           │       mildio_106.png
+│           │       mildio_107.png
+│           │       mildio_108.png
+│           │       mildio_109.png
+│           │       mildio_110.png
+│           │       mildio_111.png
+│           │       mildio_112.png
+│           │       mildio_113.png
+│           │       mildio_114.png
+│           │       mildio_115.png
+│           │       mildio_116.png
+│           │       mildio_117.png
+│           │       mildio_118.png
+│           │       mildio_119.png
+│           │       mildio_120.png
+│           │       mildio_121.png
+│           │       mildio_122.png
+│           │       mildio_123.png
+│           │       mildio_124.png
+│           │       mildio_125.png
+│           │       mildio_126.png
+│           │       mildio_127.png
+│           │       mildio_128.png
+│           │       mildio_129.png
+│           │       mildio_130.png
+│           │       mildio_131.png
+│           │       mildio_132.png
+│           │       mildio_133.png
+│           │       mildio_134.png
+│           │       mildio_135.png
+│           │       mildio_136.png
+│           │       mildio_137.png
+│           │       mildio_138.png
+│           │       mildio_139.png
+│           │       mildio_140.png
+│           │       mildio_141.png
+│           │       mildio_142.png
+│           │       mildio_143.png
+│           │       mildio_144.png
+│           │       mildio_145.png
+│           │       mildio_146.png
+│           │       mildio_147.png
+│           │       mildio_148.png
+│           │       mildio_149.png
+│           │       mildio_150.png
+│           │       mildio_151.png
+│           │       mildio_152.png
+│           │       mildio_153.png
+│           │       mildio_154.png
+│           │       mildio_155.png
+│           │       mildio_156.png
+│           │       mildio_157.png
+│           │       mildio_158.png
+│           │       mildio_159.png
+│           │       mildio_160.png
+│           │       mildio_161.png
+│           │       mildio_162.png
+│           │       mildio_163.png
+│           │       mildio_164.png
+│           │       mildio_165.png
+│           │       mildio_166.png
+│           │       mildio_167.png
+│           │       mildio_168.png
+│           │       mildio_169.png
+│           │       mildio_170.png
+│           │       mildio_171.png
+│           │       mildio_172.png
+│           │       mildio_173.png
+│           │       mildio_174.png
+│           │       mildio_175.png
+│           │       mildio_176.png
+│           │       mildio_177.png
+│           │       mildio_178.png
+│           │       mildio_179.png
+│           │       mildio_180.png
+│           │       mildio_181.png
+│           │       mildio_182.png
+│           │       mildio_183.png
+│           │       mildio_184.png
+│           │       mildio_185.png
+│           │       mildio_186.png
+│           │       mildio_187.png
+│           │       mildio_188.png
+│           │       mildio_189.png
+│           │       mildio_190.png
+│           │       mildio_191.png
+│           │       mildio_192.png
+│           │       mildio_193.png
+│           │       mildio_194.png
+│           │       mildio_195.png
+│           │       mildio_196.png
+│           │       mildio_197.png
+│           │       mildio_198.png
+│           │       mildio_199.png
+│           │
+│           ├───oidio
+│           │       oidio_000.png
+│           │       oidio_001.png
+│           │       oidio_002.png
+│           │       oidio_003.png
+│           │       oidio_004.png
+│           │       oidio_005.png
+│           │       oidio_006.png
+│           │       oidio_007.png
+│           │       oidio_008.png
+│           │       oidio_009.png
+│           │       oidio_010.png
+│           │       oidio_011.png
+│           │       oidio_012.png
+│           │       oidio_013.png
+│           │       oidio_014.png
+│           │       oidio_015.png
+│           │       oidio_016.png
+│           │       oidio_017.png
+│           │       oidio_018.png
+│           │       oidio_019.png
+│           │       oidio_020.png
+│           │       oidio_021.png
+│           │       oidio_022.png
+│           │       oidio_023.png
+│           │       oidio_024.png
+│           │       oidio_025.png
+│           │       oidio_026.png
+│           │       oidio_027.png
+│           │       oidio_028.png
+│           │       oidio_029.png
+│           │       oidio_030.png
+│           │       oidio_031.png
+│           │       oidio_032.png
+│           │       oidio_033.png
+│           │       oidio_034.png
+│           │       oidio_035.png
+│           │       oidio_036.png
+│           │       oidio_037.png
+│           │       oidio_038.png
+│           │       oidio_039.png
+│           │       oidio_040.png
+│           │       oidio_041.png
+│           │       oidio_042.png
+│           │       oidio_043.png
+│           │       oidio_044.png
+│           │       oidio_045.png
+│           │       oidio_046.png
+│           │       oidio_047.png
+│           │       oidio_048.png
+│           │       oidio_049.png
+│           │       oidio_050.png
+│           │       oidio_051.png
+│           │       oidio_052.png
+│           │       oidio_053.png
+│           │       oidio_054.png
+│           │       oidio_055.png
+│           │       oidio_056.png
+│           │       oidio_057.png
+│           │       oidio_058.png
+│           │       oidio_059.png
+│           │       oidio_060.png
+│           │       oidio_061.png
+│           │       oidio_062.png
+│           │       oidio_063.png
+│           │       oidio_064.png
+│           │       oidio_065.png
+│           │       oidio_066.png
+│           │       oidio_067.png
+│           │       oidio_068.png
+│           │       oidio_069.png
+│           │       oidio_070.png
+│           │       oidio_071.png
+│           │       oidio_072.png
+│           │       oidio_073.png
+│           │       oidio_074.png
+│           │       oidio_075.png
+│           │       oidio_076.png
+│           │       oidio_077.png
+│           │       oidio_078.png
+│           │       oidio_079.png
+│           │       oidio_080.png
+│           │       oidio_081.png
+│           │       oidio_082.png
+│           │       oidio_083.png
+│           │       oidio_084.png
+│           │       oidio_085.png
+│           │       oidio_086.png
+│           │       oidio_087.png
+│           │       oidio_088.png
+│           │       oidio_089.png
+│           │       oidio_090.png
+│           │       oidio_091.png
+│           │       oidio_092.png
+│           │       oidio_093.png
+│           │       oidio_094.png
+│           │       oidio_095.png
+│           │       oidio_096.png
+│           │       oidio_097.png
+│           │       oidio_098.png
+│           │       oidio_099.png
+│           │       oidio_100.png
+│           │       oidio_101.png
+│           │       oidio_102.png
+│           │       oidio_103.png
+│           │       oidio_104.png
+│           │       oidio_105.png
+│           │       oidio_106.png
+│           │       oidio_107.png
+│           │       oidio_108.png
+│           │       oidio_109.png
+│           │       oidio_110.png
+│           │       oidio_111.png
+│           │       oidio_112.png
+│           │       oidio_113.png
+│           │       oidio_114.png
+│           │       oidio_115.png
+│           │       oidio_116.png
+│           │       oidio_117.png
+│           │       oidio_118.png
+│           │       oidio_119.png
+│           │       oidio_120.png
+│           │       oidio_121.png
+│           │       oidio_122.png
+│           │       oidio_123.png
+│           │       oidio_124.png
+│           │       oidio_125.png
+│           │       oidio_126.png
+│           │       oidio_127.png
+│           │       oidio_128.png
+│           │       oidio_129.png
+│           │       oidio_130.png
+│           │       oidio_131.png
+│           │       oidio_132.png
+│           │       oidio_133.png
+│           │       oidio_134.png
+│           │       oidio_135.png
+│           │       oidio_136.png
+│           │       oidio_137.png
+│           │       oidio_138.png
+│           │       oidio_139.png
+│           │       oidio_140.png
+│           │       oidio_141.png
+│           │       oidio_142.png
+│           │       oidio_143.png
+│           │       oidio_144.png
+│           │       oidio_145.png
+│           │       oidio_146.png
+│           │       oidio_147.png
+│           │       oidio_148.png
+│           │       oidio_149.png
+│           │       oidio_150.png
+│           │       oidio_151.png
+│           │       oidio_152.png
+│           │       oidio_153.png
+│           │       oidio_154.png
+│           │       oidio_155.png
+│           │       oidio_156.png
+│           │       oidio_157.png
+│           │       oidio_158.png
+│           │       oidio_159.png
+│           │       oidio_160.png
+│           │       oidio_161.png
+│           │       oidio_162.png
+│           │       oidio_163.png
+│           │       oidio_164.png
+│           │       oidio_165.png
+│           │       oidio_166.png
+│           │       oidio_167.png
+│           │       oidio_168.png
+│           │       oidio_169.png
+│           │       oidio_170.png
+│           │       oidio_171.png
+│           │       oidio_172.png
+│           │       oidio_173.png
+│           │       oidio_174.png
+│           │       oidio_175.png
+│           │       oidio_176.png
+│           │       oidio_177.png
+│           │       oidio_178.png
+│           │       oidio_179.png
+│           │       oidio_180.png
+│           │       oidio_181.png
+│           │       oidio_182.png
+│           │       oidio_183.png
+│           │       oidio_184.png
+│           │       oidio_185.png
+│           │       oidio_186.png
+│           │       oidio_187.png
+│           │       oidio_188.png
+│           │       oidio_189.png
+│           │       oidio_190.png
+│           │       oidio_191.png
+│           │       oidio_192.png
+│           │       oidio_193.png
+│           │       oidio_194.png
+│           │       oidio_195.png
+│           │       oidio_196.png
+│           │       oidio_197.png
+│           │       oidio_198.png
+│           │       oidio_199.png
+│           │
+│           └───saudavel
+│                   saudavel_000.png
+│                   saudavel_001.png
+│                   saudavel_002.png
+│                   saudavel_003.png
+│                   saudavel_004.png
+│                   saudavel_005.png
+│                   saudavel_006.png
+│                   saudavel_007.png
+│                   saudavel_008.png
+│                   saudavel_009.png
+│                   saudavel_010.png
+│                   saudavel_011.png
+│                   saudavel_012.png
+│                   saudavel_013.png
+│                   saudavel_014.png
+│                   saudavel_015.png
+│                   saudavel_016.png
+│                   saudavel_017.png
+│                   saudavel_018.png
+│                   saudavel_019.png
+│                   saudavel_020.png
+│                   saudavel_021.png
+│                   saudavel_022.png
+│                   saudavel_023.png
+│                   saudavel_024.png
+│                   saudavel_025.png
+│                   saudavel_026.png
+│                   saudavel_027.png
+│                   saudavel_028.png
+│                   saudavel_029.png
+│                   saudavel_030.png
+│                   saudavel_031.png
+│                   saudavel_032.png
+│                   saudavel_033.png
+│                   saudavel_034.png
+│                   saudavel_035.png
+│                   saudavel_036.png
+│                   saudavel_037.png
+│                   saudavel_038.png
+│                   saudavel_039.png
+│                   saudavel_040.png
+│                   saudavel_041.png
+│                   saudavel_042.png
+│                   saudavel_043.png
+│                   saudavel_044.png
+│                   saudavel_045.png
+│                   saudavel_046.png
+│                   saudavel_047.png
+│                   saudavel_048.png
+│                   saudavel_049.png
+│                   saudavel_050.png
+│                   saudavel_051.png
+│                   saudavel_052.png
+│                   saudavel_053.png
+│                   saudavel_054.png
+│                   saudavel_055.png
+│                   saudavel_056.png
+│                   saudavel_057.png
+│                   saudavel_058.png
+│                   saudavel_059.png
+│                   saudavel_060.png
+│                   saudavel_061.png
+│                   saudavel_062.png
+│                   saudavel_063.png
+│                   saudavel_064.png
+│                   saudavel_065.png
+│                   saudavel_066.png
+│                   saudavel_067.png
+│                   saudavel_068.png
+│                   saudavel_069.png
+│                   saudavel_070.png
+│                   saudavel_071.png
+│                   saudavel_072.png
+│                   saudavel_073.png
+│                   saudavel_074.png
+│                   saudavel_075.png
+│                   saudavel_076.png
+│                   saudavel_077.png
+│                   saudavel_078.png
+│                   saudavel_079.png
+│                   saudavel_080.png
+│                   saudavel_081.png
+│                   saudavel_082.png
+│                   saudavel_083.png
+│                   saudavel_084.png
+│                   saudavel_085.png
+│                   saudavel_086.png
+│                   saudavel_087.png
+│                   saudavel_088.png
+│                   saudavel_089.png
+│                   saudavel_090.png
+│                   saudavel_091.png
+│                   saudavel_092.png
+│                   saudavel_093.png
+│                   saudavel_094.png
+│                   saudavel_095.png
+│                   saudavel_096.png
+│                   saudavel_097.png
+│                   saudavel_098.png
+│                   saudavel_099.png
+│                   saudavel_100.png
+│                   saudavel_101.png
+│                   saudavel_102.png
+│                   saudavel_103.png
+│                   saudavel_104.png
+│                   saudavel_105.png
+│                   saudavel_106.png
+│                   saudavel_107.png
+│                   saudavel_108.png
+│                   saudavel_109.png
+│                   saudavel_110.png
+│                   saudavel_111.png
+│                   saudavel_112.png
+│                   saudavel_113.png
+│                   saudavel_114.png
+│                   saudavel_115.png
+│                   saudavel_116.png
+│                   saudavel_117.png
+│                   saudavel_118.png
+│                   saudavel_119.png
+│                   saudavel_120.png
+│                   saudavel_121.png
+│                   saudavel_122.png
+│                   saudavel_123.png
+│                   saudavel_124.png
+│                   saudavel_125.png
+│                   saudavel_126.png
+│                   saudavel_127.png
+│                   saudavel_128.png
+│                   saudavel_129.png
+│                   saudavel_130.png
+│                   saudavel_131.png
+│                   saudavel_132.png
+│                   saudavel_133.png
+│                   saudavel_134.png
+│                   saudavel_135.png
+│                   saudavel_136.png
+│                   saudavel_137.png
+│                   saudavel_138.png
+│                   saudavel_139.png
+│                   saudavel_140.png
+│                   saudavel_141.png
+│                   saudavel_142.png
+│                   saudavel_143.png
+│                   saudavel_144.png
+│                   saudavel_145.png
+│                   saudavel_146.png
+│                   saudavel_147.png
+│                   saudavel_148.png
+│                   saudavel_149.png
+│                   saudavel_150.png
+│                   saudavel_151.png
+│                   saudavel_152.png
+│                   saudavel_153.png
+│                   saudavel_154.png
+│                   saudavel_155.png
+│                   saudavel_156.png
+│                   saudavel_157.png
+│                   saudavel_158.png
+│                   saudavel_159.png
+│                   saudavel_160.png
+│                   saudavel_161.png
+│                   saudavel_162.png
+│                   saudavel_163.png
+│                   saudavel_164.png
+│                   saudavel_165.png
+│                   saudavel_166.png
+│                   saudavel_167.png
+│                   saudavel_168.png
+│                   saudavel_169.png
+│                   saudavel_170.png
+│                   saudavel_171.png
+│                   saudavel_172.png
+│                   saudavel_173.png
+│                   saudavel_174.png
+│                   saudavel_175.png
+│                   saudavel_176.png
+│                   saudavel_177.png
+│                   saudavel_178.png
+│                   saudavel_179.png
+│                   saudavel_180.png
+│                   saudavel_181.png
+│                   saudavel_182.png
+│                   saudavel_183.png
+│                   saudavel_184.png
+│                   saudavel_185.png
+│                   saudavel_186.png
+│                   saudavel_187.png
+│                   saudavel_188.png
+│                   saudavel_189.png
+│                   saudavel_190.png
+│                   saudavel_191.png
+│                   saudavel_192.png
+│                   saudavel_193.png
+│                   saudavel_194.png
+│                   saudavel_195.png
+│                   saudavel_196.png
+│                   saudavel_197.png
+│                   saudavel_198.png
+│                   saudavel_199.png
+│
+├───docs
+├───notebooks
+│       01_planeamento_recomendacao_castas.ipynb
+│       02_geracao_imagens_videira.ipynb
+│       03_deteccao_doencas_visao_computacional.ipynb
+│       04_previsao_produtividade_qualidade_vfinal.ipynb
+│       05_otimizacao_vindima.ipynb
+│       06_previsao_precos_mercado.ipynb
+│
+├───src
+│   ├───api
+│   ├───dashboard
+│   ├───data_generation
+│   │       gerar_exploracao.py
+│   │       gerar_solo_produtividade.py
+│   │
+│   ├───integration
+│   └───models
+│           lstm_produtividade_final.h5
+│           modelo_deteccao_doencas.h5
+│           modelo_deteccao_doencas.keras
+│           modelo_recomendacao_castas.pkl
+│           xgb_produtividade_final.pkl
+│           xgb_qualidade_final.pkl
+│
+└───tests
+(base) PS C:\Users\PEDRO\OneDrive\Ambiente de Trabalho\agro-ia-simulacao> 

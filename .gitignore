@@ -1,0 +1,8 @@
+﻿src/models/*.keras
+src/models/*.h5
+src/models/*.pkl
+data/synthetic/imagens_videira/*.png
+data/synthetic/imagens_videira/escoriose/*.png
+data/synthetic/imagens_videira/mildio/*.png
+data/synthetic/imagens_videira/oidio/*.png
+data/synthetic/imagens_videira/saudavel/*.png

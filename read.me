@@ -1,24 +1,44 @@
 
 Este projeto consiste na simulação da criação de uma empresa fictícia do setor vitícola que utiliza inteligência artificial em várias etapas da produção. O objetivo é demonstrar a aplicação prática de diferentes modelos de IA (desde recomendações baseadas em árvores até visão computacional, séries temporais e otimização) num contexto realista
-
 Nota: Todos os dados são sintéticos, gerados para se aproximarem da realidade da região do Douro (Portugal). A estrutura é modular e facilmente adaptável a dados reais.
 
 Visão Geral
 A empresa fictícia "VitisIA" dedica-se à produção de vinho de qualidade, usando IA para apoiar decisões em diversas fases:
-
 Planeamento: recomendação de castas mais adequadas a cada talhão (notebook 01).
-
 Monitorização: deteção precoce de doenças através de imagens de videiras (notebooks 02 e 03).
-
 Previsão: estimativa da produtividade e do teor alcoólico com base em dados climáticos e índices de vegetação (notebook 04).
-
 Logística: calendarização ótima da vindima respeitando restrições da adega (notebook 05).
-
 Comercialização: previsão de preços de mercado para decidir o melhor momento de venda (notebook 06).
-
 Não foram implementadas todas as etapas de uma cadeia de valor completa; estas seis representam um conjunto coerente e ilustrativo das potencialidades da IA no setor.
 
-Tecnologias Utilizadas
+Estrutura do Projeto no github , no documento estrutura local esta a estrutura do vscode com modelos e as imagens geradas nao tendo sido carregadas para aqui devido ao seu tamanho
+
+agro-ia-simulacao/
+├── data/               # Dados sintéticos (CSV, imagens) e pastas raw/processed
+├── notebooks/          # Jupyter Notebooks (um por etapa)
+├── src/                # Código fonte (geração de dados, modelos)
+├── requirements.txt    # Dependências do projeto
+└── README.md           # Este ficheiro
+Os ficheiros de grande dimensão (modelos treinados e imagens PNG) não são incluídos no repositório GitHub devido a limitações de tamanho, mas podem ser gerados localmente executando os notebooks correspondentes.
+
+Descrição dos Notebooks
+01	01_planeamento_recomendacao_castas.ipynb	,Recomendar castas com base em características do talhão (solo, clima, exposição)	Random Forest, XGBoost, SHAP
+02	02_geracao_imagens_videira.ipynb	,Gerar imagens sintéticas de folhas saudáveis e com doenças (míldio, oídio, escoriose)	OpenCV, aumentação de dados
+03	03_deteccao_doencas_visao_computacional.ipynb,	Classificar doenças em imagens de videira	CNN (EfficientNetB0), fine‑tuning
+04	04_previsao_produtividade_qualidade.ipynb	,Prever produtividade (ton/ha) e teor alcoólico usando dados climáticos e NDVI	, XGBoost e LSTM
+05	05_otimizacao_vindima.ipynb	,Determinar a data de colheita que maximiza a qualidade respeitando capacidade da adega e dias com risco de chuva	,Programação linear inteira (OR‑Tools)
+06	06_previsao_precos_mercado.ipynb,	Prever preços do vinho para apoiar a decisão de venda	, SARIMA e  LSTM
+
+
+Limitações e Evolução para o Mundo Real
+Dados sintéticos – As relações são simplificadas e o ruído controlado. Numa aplicação real, seria necessário recolher dados históricos de estações meteorológicas, imagens reais, registos de produtividade e preços de mercado. A calibração com dados reais permitiria validar a robustez dos modelos.
+Quantidade de dados – Alguns modelos (LSTM, CNNs) beneficiariam de conjuntos muito maiores (milhares de imagens, décadas de séries temporais) para atingir todo o seu potencial.
+Pré‑processamento específico – Os notebooks utilizam codificações e escalonamentos manuais; numa versão produtiva, estes passos deveriam ser encapsulados em pipelines (ex.: sklearn.pipeline) e guardados para uso em inferência.
+Integração – O projeto não inclui uma API ou dashboard funcionais (apenas esboços); uma extensão natural seria desenvolver um sistema que consuma os modelos treinados e apresente resultados de forma interativa.
+Validação externa – Seria essencial testar os modelos com dados de diferentes regiões e castas para avaliar a generalização.
+
+
+Tecnologias Utilizadas:
 
 Linguagem: Python 3.9+
 
@@ -40,35 +60,6 @@ Visão computacional: opencv-python, scikit-image
 
 Otimização: ortools
 
-
-Estrutura do Projeto no github , no documento estrutura local esta a estrutura do vscode com modelos e as imagens geradas nao tendo sido carregadas para aqui devido ao seu tamanho
-
-agro-ia-simulacao/
-├── data/               # Dados sintéticos (CSV, imagens) e pastas raw/processed
-├── notebooks/          # Jupyter Notebooks (um por etapa)
-├── src/                # Código fonte (geração de dados, modelos)
-├── requirements.txt    # Dependências do projeto
-└── README.md           # Este ficheiro
-Os ficheiros de grande dimensão (modelos treinados e imagens PNG) não são incluídos no repositório GitHub devido a limitações de tamanho, mas podem ser gerados localmente executando os notebooks correspondentes.
-
-Descrição dos Notebooks
-01	01_planeamento_recomendacao_castas.ipynb	,Recomendar castas com base em características do talhão (solo, clima, exposição)	Random Forest, XGBoost, SHAP
-02	02_geracao_imagens_videira.ipynb	,Gerar imagens sintéticas de folhas saudáveis e com doenças (míldio, oídio, escoriose)	OpenCV, aumentação de dados
-03	03_deteccao_doencas_visao_computacional.ipynb,	Classificar doenças em imagens de videira	CNN (EfficientNetB0), fine‑tuning
-04	04_previsao_produtividade_qualidade.ipynb	,Prever produtividade (ton/ha) e teor alcoólico usando dados climáticos e NDVI	, XGBoost e LSTM
-05	05_otimizacao_vindima.ipynb	,Determinar a data de colheita que maximiza a qualidade respeitando capacidade da adega e dias com risco de chuva	,Programação linear inteira (OR‑Tools)
-06	06_previsao_precos_mercado.ipynb,	Prever preços do vinho para apoiar a decisão de venda	, SARIMA e  LSTM
-
-Limitações e Evolução para o Mundo Real
-Dados sintéticos – As relações são simplificadas e o ruído controlado. Numa aplicação real, seria necessário recolher dados históricos de estações meteorológicas, imagens reais, registos de produtividade e preços de mercado. A calibração com dados reais permitiria validar a robustez dos modelos.
-
-Quantidade de dados – Alguns modelos (LSTM, CNNs) beneficiariam de conjuntos muito maiores (milhares de imagens, décadas de séries temporais) para atingir todo o seu potencial.
-
-Pré‑processamento específico – Os notebooks utilizam codificações e escalonamentos manuais; numa versão produtiva, estes passos deveriam ser encapsulados em pipelines (ex.: sklearn.pipeline) e guardados para uso em inferência.
-
-Integração – O projeto não inclui uma API ou dashboard funcionais (apenas esboços); uma extensão natural seria desenvolver um sistema que consuma os modelos treinados e apresente resultados de forma interativa.
-
-Validação externa – Seria essencial testar os modelos com dados de diferentes regiões e castas para avaliar a generalização.
 
 
 
